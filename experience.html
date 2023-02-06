@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <a class="full-back"><img src="./images/back.png"></a>
+            <div class="title">
+                <div class="page-name">გამოცდილება</div>
+                <div class="page-count">2/3</div>
+                <div class="title-line"></div>
+            </div>
+
+                <form action="#">
+                    <div class="item">
+                        <label for="email">თანამდებობა</label>
+                        <input type="email" name="email" placeholder="დეველოპერი, დიზაინერი, ა.შ.">
+                        <p>მინიმუმ 2 სიმბოლო</p>
+                    </div>
+                    <div class="item">
+                        <label for="number">დამსაქმებელი</label>
+                        <input type="number" name="number" placeholder="დამსაქმებელი">
+                        <p>მინიმუმ 2 სიმბოლო</p>
+                    </div>
+                    <article>
+                        <div class="item">
+                            <label for="name">დაწყების რიცხვი</label>
+                            <input type="date" name="name" placeholder="ანზორი">
+                        </div>
+                        <div class="item">
+                            <label for="lastname">დამთავრების რიცხვი</label>
+                            <input type="date" name="lastname" placeholder="მუმლაძე">
+                        </div>
+                    </article>
+                    <div class="item">
+                        <label for="textarea">აღწერა</label>
+                        <textarea name="textarea" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"></textarea>
+                    </div>
+                    <p class="line1"></p>
+                </form>
+                <a id="add-input-1">მეტი გამოცდილების დამატება</a>
+                <a id="submit2">შემდეგი</a>
+                <a class="back" href="private-info.html">უკან</a>
+        </div>
+
+        <div class="generate"></div>
+
+        <!-- javascript file -->
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>
