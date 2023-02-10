@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Helvetica Neue';
 }
 
 body {
     overflow-x: hidden;
-    font-family: 'Helvetica Neue';
 }
 
 /*****************
@@ -107,6 +107,7 @@ private information page
     background-color: #FFFFFF;
     padding: 6px 10px;
     border-radius: 50%; 
+    cursor: pointer;
 }
 
 .page-name {
@@ -151,6 +152,7 @@ form {
 .item {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .item > * {
@@ -174,7 +176,7 @@ form div {
     flex-direction: column;
 }
 
-input[name="number"], input[name="email"] {
+input[name="number"], input[name="email"], input[name="text"] {
     width: 798px;
     height: 48px;
     background: #FFFFFF;
@@ -184,7 +186,7 @@ input[name="number"], input[name="email"] {
     padding: 0px 10px;
 }
 
-input[name="name"], input[name="lastname"] {
+input[name="small"] {
     Width: 371px;
     Height: 48px;
     border: 1px solid #BCBCBC;
@@ -203,11 +205,19 @@ textarea {
     padding: 5px 10px;
 }
 
+input[name="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 18px;
+}
+
 form label {
     font-weight: 500;
 }
 
-#submit1, #submit2 {
+#submit1, #submit2, #submit3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,7 +244,7 @@ form label {
     margin-top: 25px;
 }
 
-#add-input-1 {
+#add-input-1, #add-input-2 {
     width: 289px;
     height: 48px;
     transform: translate(-255px, 180px);
@@ -268,6 +278,53 @@ form label {
     letter-spacing: 0.08em;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+/*************************************
+drop down button for education page
+**************************************/
+
+#dropDownButton {
+    width: 371px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    padding: 10px 10px 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.drop-down {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    margin-top: 85px;
+    background: #FFFFFF;
+}
+
+.drop-down div {
+    border: none;
+    padding: 10px 10px 10px 16px;
+    width: 370px;
+    height: 41px;
+    background: #FFFFFF;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.drop-down-togle {
+    display: flex;
 }
 
 .generate {
